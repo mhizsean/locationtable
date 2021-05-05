@@ -1,0 +1,42 @@
+export const SomeData = [
+  {
+    name: "Esther",
+    phoneNumber: "090873699",
+    email: "ade@gmail.com",
+    address: "Lagos, Nigeria",
+    longitude: "876548",
+    latitude: "345688",
+  },
+  {
+    name: "Esther",
+    phoneNumber: "090873699",
+    email: "ade@gmail.com",
+    address: "Lagos, Nigeria",
+    longitude: "876548",
+    latitude: "345688",
+  },
+  {
+    name: "Esther",
+    phoneNumber: "090873699",
+    email: "ade@gmail.com",
+    address: "Lagos, Nigeria",
+    longitude: "876548",
+    latitude: "345688",
+  },
+  {
+    name: "Esther",
+    phoneNumber: "090873699",
+    email: "ade@gmail.com",
+    address: "Lagos, Nigeria",
+    longitude: "876548",
+    latitude: "345688",
+  },
+  {
+    name: "Esther",
+    phoneNumber: "090873699",
+    email: "ade@gmail.com",
+    address: "Lagos, Nigeria",
+    longitude: "876548",
+    latitude: "345688",
+  },
+];

@@ -1,0 +1,173 @@
+/* Layout */
+.layout-cont {
+  position: absolute;
+  overflow: hidden;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+}
+
+.layout-cont .content {
+  	margin-top: 1.75rem;
+    width: 80%;
+  	height: calc(100% - 3.75rem);
+  	padding: 2rem 3.5rem 2rem 3.5rem;
+  	overflow-y: scroll;
+}
+
+.header-cont {
+  background-color: transparent;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-top: -2rem;
+  margin-bottom: 2rem;
+}
+
+
+.welcome-cont span {
+  font-size: 16px;
+  color: #818981;
+  font-weight: bold;
+}
+
+.side-nav {
+  	width: 15%;
+  	height: 100vh;
+  	box-shadow: 0px 1px 13px 1px #8d8d8d;
+    background-color: #f7f7f7;
+  	z-index: 200;
+  	left: 0;
+  	transition: cubic-bezier(1, -0.13, 0, 1.13) all 0.25s;
+
+}
+
+.nav-cont {
+  padding-top: 3rem;
+}
+
+.nav-cont  a {
+  text-decoration: none;
+  padding-left: 3.3rem;
+  padding-right: 3.3rem;
+  color: #818991;
+  margin-top: 3rem;
+  font-size: 0.9rem;
+
+}
+.nav-cont .activeRoute {
+  background-color: #F5F5F5;
+  border-right: 3px solid #BC2C3F;
+  padding-left: 2.3rem;
+  height: 62px;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+/* table */
+.table-cont {
+  box-shadow: 0px 0px 17px rgba(0, 0, 0, 0.08);
+  border-radius: 6px;
+}
+.table {
+  width: 100%;
+  padding: 0.7rem;
+}
+
+.table thead {
+  background-color: #f8f8f8;
+}
+.table thead th {
+  font-size: 0.84rem;
+  font-weight: normal;
+  font-size: 1rem;
+  font-weight: 500;
+  padding: 0 1rem;
+}
+
+.table thead tr th {
+  height: 4.06rem;
+}
+
+.table thead tr th th {
+font-weight: 600;
+color: #000;
+
+}
+
+.table tbody tr {
+    height: 3.75rem;
+    font-size: 0.78rem;
+}
+
+.table th {
+  text-align: left;
+  text-transform: capitalize;
+}
+
+/* form */
+.input {
+  width: 100%;
+  margin-top: 1.5rem;
+}
+.input .label {
+  font-size: 0.8rem;
+  color: #818981;
+  margin-bottom: 0.7rem;
+}
+
+ .input-cont input { 
+  width: 100% ;
+  padding: 0.6rem 0.5rem;
+  outline: none;
+  border: 1px solid #ccc;
+  border-radius: 0.4rem;
+  flex-shrink: 0;
+}
+
+.input-control {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* button */ 
+button {
+  background-color: tomato;
+  color: #fff;
+  width: 200px;
+  padding: 0.5rem 0.7rem;
+  border: none;
+  border-radius: 0.2rem;
+      box-shadow: 0px 2px 0px 1px #bc2c3f;
+margin-top: 1rem;
+text-transform: uppercase;
+}
+
+/* general */
+.pointer {
+  cursor: pointer;
+}
+
+.mr {
+  margin-right: 2.5rem;
+}
+
+.ml {
+  margin-left: 1.5rem;
+}
+
+.w-90 {
+  width: 90%;
+}
+
+.harmburger {
+  visibility: hidden;
+}
+
+@media screen and (max-width: 600px) {
+  .harmburger {
+    display: block;
+  }
+}
