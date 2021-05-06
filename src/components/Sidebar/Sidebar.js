@@ -8,7 +8,7 @@ const Sidebar = ({ sider, close }) => {
       onClick={(e) => e.stopPropagation()}>
       <div className="nav-cont">
         <NavLink to="/" activeClassName="activeRoute" onClick={() => close()}>
-          Overview
+          Dashboard
         </NavLink>
       </div>
       <div className="nav-cont">

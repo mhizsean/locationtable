@@ -22,7 +22,7 @@ const Overview = () => {
   return (
     <div className="overview-cont">
       <div className="title-cont">
-        <h3>Overview</h3>
+        <h3>Dashboard</h3>
 
         <div>
           <Button
