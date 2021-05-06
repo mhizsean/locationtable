@@ -1,16 +1,21 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 
-const Sidebar = () => {
+const Sidebar = ({ sider, close }) => {
   return (
-    <div className="side-nav">
+    <div
+      className={`side-nav ${sider ? "sider" : ""}`}
+      onClick={(e) => e.stopPropagation()}>
       <div className="nav-cont">
-        <NavLink to="/dashb" activeClassName="activeRoute">
+        <NavLink to="/" activeClassName="activeRoute" onClick={() => close()}>
           Overview
         </NavLink>
       </div>
       <div className="nav-cont">
-        <NavLink to="/add-contact" activeClassName="activeRoute">
+        <NavLink
+          to="/add-contact"
+          activeClassName="activeRoute"
+          onClick={() => close()}>
           Add Contact
         </NavLink>
       </div>

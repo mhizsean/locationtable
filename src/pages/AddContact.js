@@ -69,6 +69,7 @@ const AddContact = () => {
       lat: latd,
     });
     setAddresses([{ ad: "" }]);
+    history.push("/");
   };
 
   const formik = useFormik({

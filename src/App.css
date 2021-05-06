@@ -49,25 +49,20 @@
 
 .nav-cont  a {
   text-decoration: none;
-  padding-left: 2.3rem;
-  padding-right: 3.3rem;
   color: #818991;
   margin-top: 3rem;
+  margin-left: 1rem;
+  margin-right: 2rem;
+  white-space: nowrap;
   font-size: 0.9rem;
   text-transform: uppercase;
 
 }
-.nav-cont .activeRoute {
-  background-color: #F5F5F5;
+.nav-cont  a:hover {
   color: #BC2C3F;
-  border-right: 3px solid #BC2C3F;
-  padding-left: 2.3rem;
-  height: 62px;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-  font-weight: 600;
-  font-size: 1rem;
+
 }
+
 
 .overview-cont {
   margin-bottom: 5rem;
@@ -227,7 +222,28 @@ button {
 @media screen and (max-width: 600px) {
   .harmburger {
     visibility: visible;
-    position: relative;  }
+    position: relative;  
+  }
+   
+  .side-nav {
+    width: 0;
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+  }
+
+  .side-nav.sider {
+    width: 250px;
+    display: block;
+    background-color: #f7f7f7;
+  }
+
+  .layout-cont .content {
+    width: 100%;
+    padding: 2rem 1.5rem 1rem 1.5rem;
+  }
 
   .overview-cont .title-cont {
     display: block;
