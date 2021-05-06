@@ -5,8 +5,8 @@ const Sidebar = () => {
   return (
     <div className="side-nav">
       <div className="nav-cont">
-        <NavLink to="/" activeClassName="activeRoute">
-          Overview Page
+        <NavLink to="/dashb" activeClassName="activeRoute">
+          Overview
         </NavLink>
       </div>
       <div className="nav-cont">

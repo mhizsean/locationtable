@@ -10,7 +10,7 @@ function App() {
       <Router>
         <Switch>
           <Route
-            path="/"
+            path="/dashb"
             exact
             render={(props) => (
               <Layout {...props}>

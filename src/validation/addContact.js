@@ -9,8 +9,22 @@ export const contactSchema = () => {
     email: Yup.string()
       .email("Please input a valid email address")
       .required("Please input a correct email address"),
-    address: Yup.string().required("Enter atleast one address"),
-    longitude: Yup.string().required("this field is required"),
-    latitude: Yup.string().required("this field is required"),
+    lng: Yup.string().required("This field is required"),
+    lat: Yup.string().required("This field is required"),
+    address: Yup.array()
+      .min(1, "Enter at least 1 address")
+      .of(
+        Yup.object()
+          .shape({
+            ad: Yup.string(),
+          })
+          .required("Please enter address")
+      ),
+  });
+};
+
+const adSchema = () => {
+  return Yup.object().shape({
+    ad: Yup.string().required("Please enter address"),
   });
 };
